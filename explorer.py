@@ -1,3 +1,7 @@
+# What the boolean filter does is that it creates a new DataFrame for rows that are only True. 
+# The difference is df["revenue"] returns a Series, while df[df["revenue"]] returns a DataFrame. The distinction matters when you want to use something tht expects a particular structure. 
+# If a colleague would ask why I would use pandas instead of Excel, I would say pandas is more efficient because it has reproducible code, identical results, and can handle millions of rows of data. 
+
 print("---Exercise 1---")
 import pandas as pd
 
